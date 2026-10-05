@@ -10,8 +10,8 @@ export const personalInfo = {
   college: "Gokula Krishna College of Engineering",
   cgpa: "8.23 / 10.0",
   graduationYear: "2026",
-  github: "https://github.com/bhagyasri-thirunam",
-  linkedin: "https://linkedin.com/in/bhagyasri-thirunam",
+  github: "https://github.com/BhagyaML",
+  linkedin: "https://www.linkedin.com/in/thirunam-bhagyasri-028183373",
   availableForWork: true,
   statusText: "Open to Full-Time Software Engineering & Developer Roles",
 };
@@ -341,7 +341,7 @@ rf_model.fit(X_train, y_train)
 y_pred = rf_model.predict(X_test)
 print(classification_report(y_test, y_pred))
 print("ROC-AUC:", roc_auc_score(y_test, rf_model.predict_proba(X_test)[:, 1]))`,
-    githubLink: "https://github.com/bhagyasri-thirunam/android-malware-detection-ml",
+    githubLink: "https://github.com/BhagyaML/android-malware-detection-ml",
     demoLink: "#",
     featured: true,
   },
@@ -397,7 +397,7 @@ public boolean transferFunds(int senderAcc, int receiverAcc, double amount) {
         return false;
     }
 }`,
-    githubLink: "https://github.com/bhagyasri-thirunam/bank-account-management-system",
+    githubLink: "https://github.com/BhagyaML/bank-account-management-system",
     demoLink: "#",
     featured: true,
   },
@@ -439,7 +439,7 @@ useEffect(() => {
   }
   localStorage.setItem('theme', theme);
 }, [theme]);`,
-    githubLink: "https://github.com/bhagyasri-thirunam/bhagyasri-portfolio",
+    githubLink: "https://github.com/BhagyaML/portfolio",
     demoLink: "#",
     featured: false,
   },

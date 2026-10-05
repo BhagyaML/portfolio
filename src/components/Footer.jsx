@@ -16,13 +16,19 @@ export default function Footer() {
           {/* Left Monogram & Info */}
           <div className="flex items-center gap-3 text-center md:text-left">
             <div
-              className="flex items-center justify-center w-10 h-10 rounded-xl text-white font-bold text-lg shadow-md transition-all duration-300"
+              className="relative flex items-center justify-center w-10 h-10 rounded-xl shadow-md transition-all duration-300 p-0.5"
               style={{
                 background: 'var(--theme-btn-gradient)',
                 boxShadow: '0 4px 14px 0 var(--theme-glow)',
               }}
             >
-              TB
+              <div className="w-full h-full rounded-[10px] overflow-hidden bg-slate-900">
+                <img
+                  src="/profile.png"
+                  alt={personalInfo.name}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
             <div>
               <p className="font-extrabold text-base text-slate-900 dark:text-white">

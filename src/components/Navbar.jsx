@@ -67,14 +67,20 @@ export default function Navbar({ onOpenResume }) {
           className="flex items-center gap-3 group focus:outline-none"
         >
           <div
-            className="relative flex items-center justify-center w-10 h-10 rounded-xl text-white font-bold text-lg shadow-md group-hover:scale-105 transition-all duration-300"
+            className="relative flex items-center justify-center w-10 h-10 rounded-xl shadow-md group-hover:scale-105 transition-all duration-300 p-0.5"
             style={{
               background: 'var(--theme-btn-gradient)',
               boxShadow: '0 4px 14px 0 var(--theme-glow)',
             }}
           >
-            TB
-            <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-white dark:border-slate-900 rounded-full"></span>
+            <div className="w-full h-full rounded-[10px] overflow-hidden bg-slate-900">
+              <img
+                src="/profile.png"
+                alt={personalInfo.name}
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-white dark:border-slate-900 rounded-full z-10"></span>
           </div>
           <div className="hidden sm:block text-left">
             <span className="block text-base font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-[var(--theme-primary)] transition-colors">

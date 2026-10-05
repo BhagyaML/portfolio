@@ -171,7 +171,22 @@ ${certificationsData.map(c => `- ${c.title} (${c.issuer})`).join('\n')}
                   <MapPin className="w-3.5 h-3.5 text-rose-500" />
                   {personalInfo.location}
                 </span>
-                <span>GitHub: github.com/bhagyasri-thirunam</span>
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:text-violet-600 dark:hover:text-violet-400"
+                >
+                  GitHub: github.com/BhagyaML
+                </a>
+                <a
+                  href={personalInfo.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:text-violet-600 dark:hover:text-violet-400"
+                >
+                  LinkedIn: linkedin.com/in/thirunam-bhagyasri-028183373
+                </a>
               </div>
             </div>
 
