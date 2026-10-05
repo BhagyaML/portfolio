@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>Thirunam Bhagyasri | Software Developer & CSE Graduate Portfolio</title>
+    <meta name="description" content="Official portfolio of Thirunam Bhagyasri - Computer Science & Engineering Graduate and Software Developer specializing in Python, Java, MySQL, Web Technologies, and Machine Learning." />
+    <meta name="keywords" content="Thirunam Bhagyasri, Software Developer, Java, Python, MySQL, Machine Learning, Gokula Krishna College of Engineering, Invezoro, Portfolio, Web Developer" />
+    <meta name="author" content="Thirunam Bhagyasri" />
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:title" content="Thirunam Bhagyasri | Software Developer Portfolio" />
+    <meta property="og:description" content="Computer Science & Engineering graduate specializing in Python, Java, MySQL, and Machine Learning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/profile.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 transition-colors duration-300 antialiased selection:bg-violet-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
